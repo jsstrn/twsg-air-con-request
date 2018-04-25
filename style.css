@@ -1,0 +1,23 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+
+main {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.submit-button::after {
+	content: 'Generate PDF';
+}
+
+.loading .submit-button {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.loading .submit-button::after {
+	content: 'Loading…';
+}
